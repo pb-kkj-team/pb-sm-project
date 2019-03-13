@@ -27,7 +27,7 @@ import com.google.android.gms.tasks.OnSuccessListener
 
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() { // o
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
