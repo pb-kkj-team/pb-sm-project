@@ -27,8 +27,8 @@ import com.google.android.gms.tasks.OnSuccessListener
 
 
 
-class MainActivity : AppCompatActivity() { // o
-
+class MainActivity : AppCompatActivity() {
+o
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
