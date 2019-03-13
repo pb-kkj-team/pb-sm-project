@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "217593848275",
+    "firebase_url": "https://aplikacja-ii-lo.firebaseio.com",
+    "project_id": "aplikacja-ii-lo",
+    "storage_bucket": "aplikacja-ii-lo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217593848275:android:38f2ea6c3188b87e",
+        "android_client_info": {
+          "package_name": "pl.suwalki.zs2.thebestiilo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217593848275-a89ke1nklji8nh73h94bqcdu2cibekbj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pl.suwalki.zs2.thebestiilo",
+            "certificate_hash": "630a210422ecca1a6e59f90b182fa1960cb7bdb6"
+          }
+        },
+        {
+          "client_id": "217593848275-mq6phshseam0ebhd8l6oimulb79b8f6e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pl.suwalki.zs2.thebestiilo",
+            "certificate_hash": "e9912f9a3b90748e6f8ee2110fd8f2d57aed43d1"
+          }
+        },
+        {
+          "client_id": "217593848275-lmf4m9q5blhglnvpgu75vnv0r82gticg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQiCgxCMSFoRAyjYJFFZJQP5SotpY790E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217593848275-lmf4m9q5blhglnvpgu75vnv0r82gticg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
