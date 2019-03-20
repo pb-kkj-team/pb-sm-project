@@ -13,6 +13,11 @@
             android:title="@string/pref_header_notifications"
             android:summary="Tu znajdziesz ustawienia powiadomień"
             android:icon="@drawable/ic_notifications_black_24dp"/>
+    <header
+            android:fragment="pl.suwalki.zs2.thebestiilo.SettingsActivity$PrivacyPolicyPreferenceFragment"
+            android:title="@string/privacy_policy"
+            android:summary="Klikając pobierzesz politykę prywatności aplikacji"
+            android:icon="@drawable/ic_arrow_forward_black_24dp"/>
 
     <!--<header
             android:fragment="pl.suwalki.zs2.thebestiilo.SettingsActivity$DataSyncPreferenceFragment"

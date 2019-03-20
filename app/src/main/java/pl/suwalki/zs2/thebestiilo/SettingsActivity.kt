@@ -1,5 +1,6 @@
 package pl.suwalki.zs2.thebestiilo
 
+import android.annotation.SuppressLint
 import android.annotation.TargetApi
 import android.content.Context
 import android.content.Intent
@@ -153,6 +154,18 @@ class SettingsActivity : AppCompatPreferenceActivity() {
             }
             return super.onOptionsItemSelected(item)
         }
+    }
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    class PrivacyPolicyPreferenceFragment : PreferenceFragment() {
+
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/document/d/e/2PACX-1vRr7eEeoLR4aRuxKkB6lF9KJaPxrs0dRLu57U_MCdWCS0yNHoOvRm6PPjkKpIYLrv3XN9_7nM4wVr4d/pub"))
+            startActivity(i)
+        }
+
+
+
     }
 
     /**

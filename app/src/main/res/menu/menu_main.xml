@@ -6,23 +6,29 @@
     <group android:checkableBehavior="single">
         <item android:id="@+id/action_home"
               android:icon="@drawable/ic_home_black_24dp"
-              android:title="Strona główna"/>
+              android:title="@string/strona_g_wna"/>
         <item android:id="@+id/action_idziennik"
               android:icon="@drawable/ic_school_black_24dp"
-              android:title="iDziennik"/>
+              android:title="@string/idziennik"/>
         <item android:id="@+id/action_planlekcji"
               android:icon="@drawable/ic_assignment_black_24dp"
-              android:title="Plan lekcji"/>
+              android:title="@string/plan_lekcji"/>
         <item android:id="@+id/action_mpk"
               android:icon="@drawable/ic_directions_bus_black_24dp"
-              android:title="Odjazdy MPK"/>
+              android:title="@string/odjazdy_mpk"/>
+        <item android:id="@+id/action_promocja"
+              android:icon="@drawable/ic_info_black_24dp"
+              android:title="@string/promocja_szko_y"/>
     </group>
 
-    <item android:title="Inne">
+    <item android:title="@string/inne">
         <menu>
+            <item android:id="@+id/action_facebook"
+                  android:icon="@drawable/ic_arrow_forward_black_24dp"
+                  android:title="@string/facebook"/>
             <item android:id="@+id/action_settings"
                   android:icon="@drawable/ic_settings_black_24dp"
-                  android:title="Ustawienia"/>
+                  android:title="@string/ustawienia"/>
         </menu>
     </item>
 

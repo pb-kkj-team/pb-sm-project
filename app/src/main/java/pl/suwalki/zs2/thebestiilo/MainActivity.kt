@@ -28,7 +28,7 @@ import com.google.android.gms.tasks.OnSuccessListener
 
 
 class MainActivity : AppCompatActivity() {
-o
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -52,6 +52,19 @@ o
             FirebaseMessaging.getInstance().unsubscribeFromTopic("news")
         }
 
+        /*AlertDialog.Builder(this)
+            .setMessage("Niestety mamy techniczne problemy ze strona internetowa przez co nie mogą pojawiać się artykuły" +
+                    ", lecz zapraszamy na naszego Facebooka lub do przegladania innych opcji aplikacji.")
+            .setPositiveButton("Facebook II LO") { p1, p2 ->
+                val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/2lo.suwalki/"))
+                startActivity(i)
+            }
+            .setNegativeButton("Kontynuuj w aplikacji") { p1, p2 ->
+                // do nothing
+            }
+            .create()
+            .show()
+        */
 
         //FirebaseMessaging.getInstance().isAutoInitEnabled = true
 
@@ -105,11 +118,21 @@ o
                         .replace(R.id.frameLayout, mpkFragment())
                         .commit()
                 }
+                R.id.action_facebook -> {
+                    val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/2lo.suwalki/"))
+                    startActivity(i)
+                }
+                R.id.action_promocja -> {
+                    val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://promocja.zs2.suwalki.pl/"))
+                    startActivity(i)
+                }
                 R.id.action_settings -> {
                     val intent = Intent(applicationContext, SettingsActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
                     applicationContext.startActivity(intent)
                 }
+
+
 
             }
             it.isChecked = true
