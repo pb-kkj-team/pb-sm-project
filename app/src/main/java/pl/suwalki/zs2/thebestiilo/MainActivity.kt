@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
                         }
                         .setNegativeButton("W aplikacji") { p1, p2 ->
                             supportFragmentManager.beginTransaction()
-                                .replace(R.id.frameLayout, iDziennikFragment())
+                                .replace(R.id.frameLayout, iDziennikLoginFragment())
                                 .commit()
                         }
                         .create()

@@ -32,6 +32,9 @@ class iDziennikFragment : Fragment() {
         root.idziennikWebView.webViewClient = object: WebViewClient(){
             override fun onPageFinished(view: WebView?, url: String?) {
                 root.idziennikProgressBar.visibility = View.GONE
+                //UserName Password document.getElementById('UserName').value = 'XD';
+
+                root.idziennikWebView.loadUrl("javascript:var uselessvar =document.getElementById('UserName').value = ''")
             }
         }
 

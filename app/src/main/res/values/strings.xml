@@ -93,4 +93,9 @@
     <string name="inne">Inne</string>
     <string name="facebook">Facebook</string>
     <string name="ustawienia">Ustawienia</string>
+    <string name="idzienniklogin1">Zaloguj się do iDziennika.</string>
+    <string name="login">Login</string>
+    <string name="has_o">Hasło</string>
+    <string name="zaloguj_si">Zaloguj się</string>
+    <string name="zapami_taj_mnie">Zapamiętaj mnie</string>
 </resources>
