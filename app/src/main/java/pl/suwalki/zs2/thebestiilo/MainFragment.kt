@@ -1,5 +1,6 @@
 package pl.suwalki.zs2.thebestiilo
 
+
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
