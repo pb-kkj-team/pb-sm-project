@@ -24,9 +24,6 @@ import kotlinx.android.synthetic.main.main.*
 import com.google.android.gms.tasks.OnSuccessListener
 
 
-
-
-
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,7 +1,7 @@
 package pl.suwalki.zs2.thebestiilo
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -39,6 +39,7 @@ class FeedbackFragment : Fragment() {
     ): View? {
         val root = inflater.inflate(R.layout.fragment_feedback, container, false)
 
+
         feedbackDbRef = FirebaseDatabase.getInstance().getReference("feedbacks")
 
         feedbackSendButton = root.feedbackSendButton
@@ -46,7 +47,7 @@ class FeedbackFragment : Fragment() {
 
         feedbackSendButton.setOnClickListener {
             val feedbackId = feedbackDbRef.push().key!!
-            feedbackDbRef.child(feedbackId).setValue(feedbackText.text).addOnCompleteListener {
+            feedbackDbRef.child(feedbackId).setValue(feedbackText.text.toString()).addOnCompleteListener {
                 Toast.makeText(context, "Dziekujemy za Twoją opinię!", Toast.LENGTH_LONG).show()
                 feedbackText.setText("")
             }.addOnFailureListener { err ->
