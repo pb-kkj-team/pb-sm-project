@@ -27,8 +27,11 @@ import pl.suwalki.zs2.thebestiilo.Service.ShakeDetector
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var temperatureSensor : TemperatureSensor
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        temperatureSensor = TemperatureSensor(this)
         setContentView(R.layout.activity_main)
         setSupportActionBar(newsDetailsToolbar)
         FirebaseApp.initializeApp(this)
@@ -125,6 +128,16 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
+    }
+
+    override fun onResume() {
+        super.onResume()
+        temperatureSensor.start()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        temperatureSensor.stop()
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
