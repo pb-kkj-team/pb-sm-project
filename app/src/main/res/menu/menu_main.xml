@@ -7,9 +7,6 @@
         <item android:id="@+id/action_home"
               android:icon="@drawable/ic_home_black_24dp"
               android:title="@string/strona_g_wna"/>
-        <item android:id="@+id/action_idziennik"
-              android:icon="@drawable/ic_school_black_24dp"
-              android:title="@string/idziennik"/>
         <item android:id="@+id/action_planlekcji"
               android:icon="@drawable/ic_assignment_black_24dp"
               android:title="@string/plan_lekcji"/>
