@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         if(settings.getBoolean("notifications_new_message", true)) {
 
-            FirebaseMessaging.getInstance().subscribeToTopic("news")
+            FirebaseMessaging.getInstance().subscribeToTopic("news-demo")
                 .addOnSuccessListener {
                     Toast.makeText(
                         this,
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
         } else {
-            FirebaseMessaging.getInstance().unsubscribeFromTopic("news")
+            FirebaseMessaging.getInstance().unsubscribeFromTopic("news-demo")
         }
 
         /*AlertDialog.Builder(this)
