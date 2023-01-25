@@ -66,7 +66,7 @@
         <item>3</item>
     </string-array>
 
-    <string-array name="multi_select_list_preference_default_value"/>
+    <string-array name="multi_select_list_preference_default_value" />
 
     <string name="pref_title_system_sync_settings">System sync settings</string>
 
@@ -89,6 +89,7 @@
     <string name="idziennik">iDziennik</string>
     <string name="plan_lekcji">Plan lekcji</string>
     <string name="odjazdy_mpk">Odjazdy MPK</string>
+    <string name="feedback">Opinia</string>
     <string name="promocja_szko_y">Promocja szkoły</string>
     <string name="inne">Inne</string>
     <string name="facebook">Facebook</string>
@@ -98,4 +99,8 @@
     <string name="has_o">Hasło</string>
     <string name="zaloguj_si">Zaloguj się</string>
     <string name="zapami_taj_mnie">Zapamiętaj mnie</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="feedback_send_button">Wyślij opinię</string>
 </resources>
