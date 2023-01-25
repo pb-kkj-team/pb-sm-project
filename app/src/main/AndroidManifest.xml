@@ -3,6 +3,8 @@
           package="pl.suwalki.zs2.thebestiilo">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-feature android:name="android.hardware.sensor.ambient_temperature" android:required="true" />
+    <uses-permission android:name="android.permission.SENSOR_SERVICE" />
 
     <application
             android:allowBackup="true"
