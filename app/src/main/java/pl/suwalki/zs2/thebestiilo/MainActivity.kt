@@ -92,7 +92,7 @@ class MainActivity : AppCompatActivity() {
                         .replace(R.id.frameLayout, MainFragment())
                         .commit()
                 }
-                R.id.action_idziennik -> {
+                /*R.id.action_idziennik -> {
                     AlertDialog.Builder(this)
                         .setMessage("Wybierz opcję otwarcia iDziennika")
                         .setPositiveButton("Zewnętrzna przeglądarka") { p1, p2 ->
@@ -107,7 +107,7 @@ class MainActivity : AppCompatActivity() {
                         .create()
                         .show()
 
-                }
+                }*/
                 R.id.action_planlekcji -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.frameLayout, PlanLekcjiFragment())
