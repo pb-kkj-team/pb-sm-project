@@ -102,6 +102,9 @@ class MainActivity : AppCompatActivity() {
                         .replace(R.id.frameLayout, mpkFragment())
                         .commit()
                 }
+                R.id.action_feedback -> {
+                    supportFragmentManager.beginTransaction().replace(R.id.frameLayout, FeedbackFragment()).commit()
+                }
                 R.id.action_facebook -> {
                     val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/2lo.suwalki/"))
                     startActivity(i)

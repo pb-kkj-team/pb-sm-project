@@ -13,6 +13,9 @@
         <item android:id="@+id/action_mpk"
               android:icon="@drawable/ic_directions_bus_black_24dp"
               android:title="@string/odjazdy_mpk"/>
+        <item android:id="@+id/action_feedback"
+                android:icon="@drawable/ic_arrow_forward_black_24dp"
+                android:title="@string/feedback"/>
         <item android:id="@+id/action_promocja"
               android:icon="@drawable/ic_info_black_24dp"
               android:title="@string/promocja_szko_y"/>
