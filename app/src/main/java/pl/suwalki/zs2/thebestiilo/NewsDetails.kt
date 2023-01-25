@@ -1,6 +1,11 @@
 package pl.suwalki.zs2.thebestiilo
 
+import android.content.Context
 import android.content.Intent
+import android.hardware.Sensor
+import android.hardware.SensorEvent
+import android.hardware.SensorEventListener
+import android.hardware.SensorManager
 import android.net.Uri
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
@@ -8,6 +13,8 @@ import android.os.Bundle
 import android.support.constraint.ConstraintLayout
 import android.support.constraint.Constraints
 import android.support.design.widget.CollapsingToolbarLayout
+import android.support.v4.content.ContextCompat
+import android.support.v4.content.ContextCompat.startActivity
 import android.text.Html
 import android.util.Log.d
 import android.view.View
@@ -22,6 +29,7 @@ import kotlinx.android.synthetic.main.activity_news_details.*
 import kotlinx.android.synthetic.main.news_details.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.jetbrains.anko.sdk27.coroutines.onTouch
+import pl.suwalki.zs2.thebestiilo.Service.ShakeDetector
 import java.text.SimpleDateFormat
 import java.time.ZonedDateTime
 import java.util.*
@@ -31,8 +39,6 @@ class NewsDetails : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news_details)
-
-
         val title = intent.getStringExtra("title")
         val image = intent.getStringExtra("image")
         val html = intent.getStringExtra("html")
@@ -132,6 +138,8 @@ class NewsDetails : AppCompatActivity() {
 
             startActivity(i)
         }
+        val shakeDetector = ShakeDetector(this,url)
+        shakeDetector.start()
 
 
 
