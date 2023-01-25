@@ -22,9 +22,7 @@ import com.google.firebase.messaging.FirebaseMessaging
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.main.*
 import com.google.android.gms.tasks.OnSuccessListener
-
-
-
+import pl.suwalki.zs2.thebestiilo.Service.ShakeDetector
 
 
 class MainActivity : AppCompatActivity() {
@@ -121,10 +119,8 @@ class MainActivity : AppCompatActivity() {
             }
             it.isChecked = true
             drawerLayout.closeDrawers()
-
             true
         }
-
 
     }
 
@@ -132,4 +128,5 @@ class MainActivity : AppCompatActivity() {
         drawerLayout.openDrawer(GravityCompat.START)
         return true
     }
+
 }
