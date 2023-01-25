@@ -20,7 +20,6 @@ private val context=context
     fun start() {
         val accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
         sensorManager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL)
-        Log.d("A","czemu to nie działa")
     }
 
     fun stop() {
@@ -33,12 +32,9 @@ private val context=context
         val z = event.values[2]
 
         val acceleration = Math.sqrt((x * x + y * y + z * z).toDouble()) / SensorManager.GRAVITY_EARTH
-        Log.d("A",acceleration.toString()+"/"+shakeThreshold)
         if (acceleration > shakeThreshold) {
             val i = Intent(Intent.ACTION_VIEW)
             i.data = Uri.parse(url)
-
-            //startActivity(context,i,
             context.startActivity(i)
 
         }
